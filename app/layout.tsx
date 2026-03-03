@@ -12,7 +12,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr">
       <body>
         <Navbar />
-        <main className="pt-16">{children}</main>
+        {/* pt-14 on mobile (top bar), pt-16 on desktop. pb-16 on mobile for bottom tab bar */}
+        <main className="pt-14 md:pt-16 pb-16 md:pb-0">{children}</main>
       </body>
     </html>
   );
